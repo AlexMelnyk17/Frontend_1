@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Зворотній зв’язок</title>
+    </head>
+    <body>
+
+        <h1>Зворотній зв’язок</h1>
+        <a href="main.html"><button>Головна</button></a>
+
+        <form action="#" method="POST">
+
+            <fieldset>
+                <legend>Персональна інформація</legend>
+                
+                <p>
+                    <label for="fullname">Прізвище та ім’я:</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="age">Вік:</label><br>
+                    <input type="number" id="age" name="age" min="1" max="120">
+                </p>
+
+                <p>
+                    <label for="education">Освіта:</label><br>
+                    <select id="education" name="education">
+                        <option value="неповна">Неповна</option>
+                        <option value="повна">Повна</option>
+                        <option value="вища">Вища</option>
+                        <option value="професійна">Професійна</option>
+                    </select>
+                </p>
+            </fieldset>
+            <p>
+                <label for="purpose">Мета зворотнього зв’язку:</label><br>
+                <select id="purpose" name="purpose">
+                    <option value="співпраця">Співпраця</option>
+                    <option value="скарга">Скарга на порушення права власності</option>
+                    <option value="пропозиція">Пропозиція</option>
+                    <option value="помилка">Наявність помилки</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="details">Детально:</label><br>
+                <textarea id="details" name="details" rows="5" cols="40" maxlength="500" style="width: 300px; height: 100px; max-width: 500px; max-height: 200px;"></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Згода на обробку інформації</label>
+            </p>
+
+            <p>
+                <button type="submit">Відправити</button>
+            </p>
+
+        </form>
+
+    </body>
+</html>
